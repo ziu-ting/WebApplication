@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>成績判斷</title>
+</head>
+<body>
+
+	<p>請輸入成績:</p>
+	<input type="number" id="num1" ><br>
+
+	<script >
+		function grade() {
+
+			var x
+			x = parseInt(document.getElementById('num1').value);
+
+			if (x>=60) {
+				document.getElementById('result').innerHTML = "成績及格";
+			}
+			else{
+				document.getElementById('result').innerHTML = "成績未達及格";
+			}
+
+			
+
+		}
+	</script>
+	
+	<button onclick="grade()">判斷</button>
+
+	<p>判斷結果:</p>
+	<output id="result"></output>
+
+</body>
+</html>

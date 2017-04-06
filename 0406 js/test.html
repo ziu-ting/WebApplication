@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>計算機</title>
+</head>
+<body>
+	<p>請輸入數字1:</p>
+	<input type="number" id="num1" ><br>
+	<p>請輸入數字2:</p>
+	<input type="number" id="num2" ><br><br>
+
+
+
+	<script>
+		
+		
+		function add() {
+
+			var x
+			var y
+			x = parseInt(document.getElementById('num1').value);
+			y = parseInt(document.getElementById('num2').value);
+
+
+			document.getElementById('result').innerHTML = x+y;
+
+		}
+
+		function minus() {
+
+			var x
+			var y
+			x = parseInt(document.getElementById('num1').value);
+			y = parseInt(document.getElementById('num2').value);
+
+
+			document.getElementById('result').innerHTML = x-y;
+
+		}
+
+		function times() {
+
+			var x
+			var y
+			x = parseInt(document.getElementById('num1').value);
+			y = parseInt(document.getElementById('num2').value);
+
+
+			document.getElementById('result').innerHTML = x*y;
+
+		}
+
+		function divid() {
+
+			var x
+			var y
+			x = parseFloat(document.getElementById('num1').value);
+			y = parseFloat(document.getElementById('num2').value);
+
+
+			document.getElementById('result').innerHTML = x/y;
+
+		}
+
+		function clean() {
+
+			document.getElementById('num1').value = 0;
+			document.getElementById('num2').value = 0;
+			document.getElementById('result').value = 0;
+
+		}
+
+	</script>
+
+	<button onclick="add()">加</button>
+	<button onclick="minus()">減</button>
+	<button onclick="times()">乘</button>
+	<button onclick="divid()">除</button>
+
+	<br>
+	<p>計算結果:</p>
+	<output id="result"></output>
+	<br><br>
+	<button onclick="clean()">歸零</button>
+	
+
+	
+	
+</body>
+</html>
